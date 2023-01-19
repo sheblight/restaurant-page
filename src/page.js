@@ -1,4 +1,13 @@
+import about from './about.js';
+import menu from './menu.js';
+import contact from './contact.js';
+
 const page = (()=> {
+    const switchTab = function(module) {
+        content.removeChild(document.querySelector("div#content > main"));
+        module.load();
+    };
+
     const load = function() {
         const content = document.querySelector('div#content');
         const header = document.createElement("header");
@@ -27,6 +36,21 @@ const page = (()=> {
         content.appendChild(header);
         content.appendChild(tabs);
         console.log("finish render");
+
+        // add event listener for tab switching
+        aboutBtn.onclick = ()=>{
+            switchTab(about);
+        };
+        menuBtn.onclick = ()=>{
+            switchTab(menu);
+        };
+        contactBtn.onclick = ()=>{
+            switchTab(contact);
+        };
+
+        // intial load
+        about.load();
+
     };
     return { load };
 })();
