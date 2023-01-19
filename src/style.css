@@ -19,3 +19,29 @@ header div {
     font-size: min(5vw, 30px);
     color:rgb(233, 216, 212)
 }
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tabs button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(77, 45, 26);
+    background-color: brown;
+    color:rgb(233, 216, 212);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabs button:hover {
+    background-color: rgb(184, 54, 45);
+}
+
+.tabs button:focus {
+    background-color: rgb(202, 58, 101);
+}
