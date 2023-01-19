@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(47, 82, 47);
+    background-color: rgb(205 187 95);
     margin: 0;
 }
 
@@ -31,7 +31,7 @@ header div {
     padding: 15px 20px;
     border-radius: 10px;
     border: 3px solid rgb(77, 45, 26);
-    background-color: brown;
+    background-color: #797e29;
     color:rgb(233, 216, 212);
     font-size: 20px;
     font-weight: bold;
@@ -39,9 +39,21 @@ header div {
 }
 
 .tabs button:hover {
-    background-color: rgb(184, 54, 45);
+    background-color: rgb(135 151 60);
 }
 
-.tabs button:focus {
-    background-color: rgb(202, 58, 101);
+.active {
+    border: 3px solid rgb(119, 60, 25);
+    background-color: rgb(181 87 43);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.about p {
+    width: min(70%, 500px);
 }

@@ -4,7 +4,8 @@ module.exports = {
     mode: 'none',
     entry: {
         index:'./src/index.js',
-        page: './src/page.js'
+        page: './src/page.js',
+        about: './src/about.js',
     },
     devtool: 'inline-source-map',
     devServer: {
