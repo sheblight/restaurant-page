@@ -1,4 +1,21 @@
 body {
-    background-image: url('./images/swamp.jpg');
     background-color: rgb(47, 82, 47);
+    margin: 0;
+}
+
+header {
+    height: 200px;
+    background-image: url('./images/swamp.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(116, 91, 45, 0.705);
+    font-size: min(5vw, 30px);
+    color:rgb(233, 216, 212)
 }
